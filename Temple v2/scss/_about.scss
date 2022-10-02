@@ -39,6 +39,7 @@
 
 @media (max-width: 1210px){
     .about{
+        height: 850px;
 
         h1{
             font-size: 40px;
@@ -70,7 +71,7 @@
 
 @media (max-width: 710px){
     .about{
-        height: 700px;
+        height: 750px;
 
         padding: 0px 50px;
         h1{
@@ -87,6 +88,11 @@
 
     }
   }
+}
+@media (max-width: 570px){
+    .about{
+        height: 800px;
+    }
 }
 
 @media (max-width: 500px){

@@ -22,11 +22,6 @@ footer{
             img{
                 width: 80px !important;
             }
-        .reserved{
-            width: 200% !important;
-            font-size: 14px;
-            margin-top: 10px ;
-        }
     }
     .middle-footer{
         display: flex;
@@ -57,11 +52,6 @@ footer{
         }
     }
 
-    .middle-footer-mobile{
-        display: none;
-    }
-
-
 }
 
 
@@ -79,9 +69,6 @@ footer{
 
             img{
                 width: 70px !important;
-            }
-            .reserved{
-                text-align: center;
             }
         }
         .middle-footer{
@@ -115,11 +102,11 @@ footer{
 }
 
 @media(max-width:400px){
-    .footer-container{
-    .middle-footer-mobile{
+    .footer-container .middle-footer {
+        text-align: center;
+        font-size: 15px ;
         width: 100%;
-        font-size: 12px;
     }
-  }
+
 }
 
