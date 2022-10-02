@@ -494,10 +494,12 @@ header.black nav {
 }
 
 .home .home_container .buttons .button1:hover {
-  background: rgba(162, 162, 162, 0.172);
+  background: #42DABF;
   color: #e5e5e5;
   -webkit-box-shadow: 3px 3px 15px #ffffff0b;
           box-shadow: 3px 3px 15px #ffffff0b;
+  -webkit-transition: 0.60s all;
+  transition: 0.60s all;
 }
 
 @media (max-width: 900px) {
