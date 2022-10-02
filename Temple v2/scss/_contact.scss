@@ -1,0 +1,188 @@
+.contact-section{
+    width: 100%;  
+    padding: 72px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+    .contact-container{
+        position: relative;
+        width: 1080px;
+        height: 288px;
+        background: rgba(19, 1, 50, 1);
+        border-radius: 15px; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 107px;
+        padding-right: 107px;
+
+
+        .image{
+            height: 100%;
+            overflow:hidden !important;
+ 
+
+            img{
+                width: 391px;
+                height: 284px;
+            }
+            .mobile-img{
+                display: none;
+            }
+        }
+
+        .info{
+            h1{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 45px;
+                color: #ffffff;  
+                margin-bottom: 50px;              
+            }
+
+            p{
+                width: 468px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 21px;
+                color: #FFFFFF;    
+                
+                a{
+                    color: rgba(66, 219, 191, 1);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1135px){
+    .contact-section{
+        .contact-container{
+            width: 90%;
+            padding-left: 50px;
+            padding-right: 50px;
+            display: flex;
+
+        }
+    }
+}
+
+@media (max-width: 1040px){
+    .contact-section{
+        .contact-container{
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 50px 150px;
+            width: auto;
+            text-align: center;
+
+            .image{
+                height: 100%;
+                overflow:visible;
+                margin-bottom: 40px;
+    
+                img{
+                    width: 351px;
+                    height: 364px;
+                }
+                .mobile-img{
+                    display: block;
+                    
+                }
+                .desktop-img{
+                    display: none;
+                }
+            }
+            .info{
+               margin-left: 0% !important;
+
+               p{
+                margin-bottom: 70px;
+               }
+            }
+
+           
+        }
+    }
+}
+
+@media (max-width: 835px){
+    .contact-section{ 
+        .contact-container{
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 50px 100px;
+            width: auto;
+        }
+    }
+}
+@media (max-width: 750px){
+    .contact-section{
+        .contact-container{
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 50px 50px;
+            width: auto;
+            text-align: center; 
+
+        }
+    }
+}
+
+@media (max-width: 630px){
+    .contact-section{ 
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+
+        .contact-container{
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 0px 30px;
+            width: auto;
+
+            .info{
+                p{
+                    width: auto;
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 455px){
+    .contact-section{ 
+        transform: scale(.9);
+        .contact-container{
+            
+            height: auto;
+            width: auto;
+            margin-bottom: -50px;
+
+            .info{
+               
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 410px){
+    .contact-section{ 
+        transform: scale(.7);
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
