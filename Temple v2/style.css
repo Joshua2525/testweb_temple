@@ -38,13 +38,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
   background: #0c001f;
   max-width: 2000px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 @font-face {
@@ -278,26 +279,10 @@ header.black nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
   .social-media {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: 20px;
     width: 100%;
   }
 }
@@ -395,7 +380,7 @@ header.black nav {
 }
 
 .home {
-  height: 750px;
+  height: 800px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,7 +461,6 @@ header.black nav {
   width: 280px;
   height: 60px;
   cursor: pointer;
-  line-height: 27px;
 }
 
 .home .home_container .buttons .button1 {
@@ -534,7 +518,7 @@ header.black nav {
     font-weight: 400 !important;
   }
   .buttons button {
-    font-size: 14px !important;
+    font-size: 12px !important;
     font-weight: 400 !important;
     width: 100px !important;
     height: 40px !important;
@@ -562,7 +546,7 @@ header.black nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 100px;
-  padding-top: 50px !important;
+  padding-top: 50px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -637,12 +621,6 @@ header.black nav {
   border-radius: 10px;
 }
 
-.services .box p {
-  color: white;
-  margin-bottom: 55px;
-  text-align: center;
-}
-
 .services .box h2 {
   color: white;
   font-size: 25px !important;
@@ -667,14 +645,35 @@ header.black nav {
 }
 
 @media (max-width: 1010px) {
+  .services {
+    padding-top: 70px !important;
+  }
   .services .box {
     margin-bottom: 20px;
+    width: 330px;
+    height: 300px;
+  }
+  .services .box img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 950px) {
+  .services {
+    height: 850px;
+    padding-top: 70px !important;
   }
 }
 
 @media (max-width: 500px) {
   .services {
     padding: 0px 20px;
+  }
+  .box {
+    margin-bottom: 20px;
+  }
+  .box img {
+    width: 120px !important;
   }
 }
 
@@ -740,6 +739,7 @@ header.black nav {
 @media (max-width: 950px) {
   .about {
     padding: 0px 50px;
+    padding-top: 50px;
   }
   .about h1 {
     font-size: 40px;
@@ -753,7 +753,7 @@ header.black nav {
 
 @media (max-width: 710px) {
   .about {
-    height: 850px;
+    height: 700px;
     padding: 0px 50px;
   }
   .about h1 {
@@ -771,8 +771,8 @@ header.black nav {
 
 @media (max-width: 500px) {
   .about {
-    height: 900px;
-    padding: 0px 40px;
+    height: 700px;
+    padding: 0px 20px;
   }
   .about h1 {
     font-size: 30px;
@@ -784,6 +784,12 @@ header.black nav {
   .about .about-box p {
     font-size: 14px;
     text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .about {
+    height: 800px;
   }
 }
 
@@ -800,6 +806,7 @@ header.black nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 50px;
+  padding-top: 50px !important;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -874,12 +881,6 @@ header.black nav {
   border-radius: 10px;
 }
 
-.achievements .box1 p {
-  color: white;
-  margin-bottom: 55px;
-  text-align: center;
-}
-
 .achievements .box1 h2 {
   color: white;
   font-size: 25px !important;
@@ -893,7 +894,8 @@ header.black nav {
 
 @media (max-width: 800px) {
   .achievements {
-    height: 2000px !important;
+    padding-top: 100px !important;
+    height: 1800px !important;
   }
 }
 
@@ -915,15 +917,9 @@ header.black nav {
   .achievements {
     padding: 0px 20px;
     height: 1700px !important;
+    padding-top: 200px !important;
   }
   .achievements .box1 {
-    width: 410px !important;
-    height: 386px;
-  }
-}
-
-@media (max-width: 500px) {
-  .box1 {
     width: 410px !important;
     height: 386px;
   }
@@ -994,6 +990,7 @@ header.black nav {
   font-size: 20px;
   line-height: 21px;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 
 .contact-section .contact-container .info p a {
@@ -1071,11 +1068,12 @@ header.black nav {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 637px) {
   .contact-section {
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
+    height: 1000px;
+  }
+  .contact-section {
+    padding: 0px 50px !important;
   }
   .contact-section .contact-container {
     -webkit-box-orient: vertical;
@@ -1083,8 +1081,12 @@ header.black nav {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     height: auto;
-    padding: 0px 30px;
+    padding: 30px 30px;
     width: auto;
+  }
+  .contact-section .contact-container .image .mobile-img {
+    width: 300px;
+    height: 300px;
   }
   .contact-section .contact-container .info p {
     width: auto;
@@ -1095,25 +1097,25 @@ header.black nav {
 
 @media (max-width: 455px) {
   .contact-section {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    height: 900px;
+    padding: 0px 50px;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   .contact-section .contact-container {
     height: auto;
     width: auto;
-    margin-bottom: -50px;
+  }
+  .contact-section .contact-container .image .mobile-img {
+    width: 200px;
+    height: 200px;
+  }
+  .contact-section .contact-container .info h1 {
+    font-size: 25px;
   }
   .contact-section .contact-container .info p {
     width: auto;
-  }
-}
-
-@media (max-width: 410px) {
-  .contact-section {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-    padding-top: 0px;
-    padding-bottom: 0px;
+    font-size: 14px;
   }
 }
 

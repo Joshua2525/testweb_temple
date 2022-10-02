@@ -29,17 +29,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
+
 }
 
 body{
     background: rgba(12, 0, 31, 1);
     max-width: 2000px;
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 
 }
 

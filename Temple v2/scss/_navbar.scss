@@ -202,25 +202,20 @@ nav{
     .navbar{
        justify-content: space-between !important;
     }
-
     .center{
       margin: 0px !important;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
       width: 100%;
 
      }
      .social-media{
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
+      margin-left: 20px;
       width: 100%;
      }
  }
+
+
  
  @media screen and (min-width:1180px){
     
