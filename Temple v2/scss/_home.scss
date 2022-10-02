@@ -62,7 +62,7 @@
                 box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
             }
             .button1:hover {
-                background: rgba(108, 108, 108, 0.353);
+                background: rgba(162, 162, 162, 0.172);
                 color: rgba(229, 229, 229, 1);
                 box-shadow: 3px 3px 15px #ffffff0b;
 
@@ -149,11 +149,14 @@
   }
 
 
+
   .particles {
     position: fixed;
     z-index: -1;
     top: 0px;
     left: 0px;
     width: 100vw;
+    height: 100%;
   }
   
+
