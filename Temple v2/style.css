@@ -164,16 +164,6 @@ nav {
   width: 100%;
 }
 
-.logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.logo a {
-  text-decoration: none;
-}
-
 .logo-nav {
   margin-top: 5px;
 }
@@ -227,7 +217,7 @@ header.black nav {
 }
 
 .center {
-  margin-left: 480px;
+  margin-left: 490px;
   margin-right: 490px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,6 +957,9 @@ header.black nav {
   .achievements .box1 {
     width: 410px !important;
     height: 386px;
+  }
+  .achievements .box1 h2 {
+    font-size: 20px !important;
   }
 }
 
