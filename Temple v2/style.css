@@ -487,19 +487,30 @@ header.black nav {
 
 .home .home_container .buttons .button1 {
   color: white;
-  border: 2px solid #42DABF;
+  border: 1px solid #42DABF;
   background-color: transparent;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  position: relative;
 }
 
-.home .home_container .buttons .button1:hover {
-  background: #42DABF;
-  color: #e5e5e5;
-  -webkit-box-shadow: 3px 3px 15px #ffffff0b;
-          box-shadow: 3px 3px 15px #ffffff0b;
-  -webkit-transition: 0.60s all;
-  transition: 0.60s all;
+.home .home_container .buttons .button1::before {
+  background-color: #42DABF;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  width: 0;
+  height: 100%;
+}
+
+.home .home_container .buttons .button1:hover::before {
+  width: 100%;
 }
 
 @media (max-width: 900px) {
