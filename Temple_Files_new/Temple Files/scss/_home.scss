@@ -1,0 +1,157 @@
+.home{
+    height: 800px;
+    width:100%;
+    display: flex;
+    background-image: url("assets/Group2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .home_container{
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+
+        .title-temple{
+            text-align: center;
+
+            h1{
+                font-size: 200px;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 1);
+                font-family: 'radikal', sans-serif;
+                margin-bottom: -28px;
+
+            }
+            p{
+                font-size: 30px;
+                letter-spacing: 2px;
+                font-weight: 700;
+                color: rgba(66, 218, 191, 1);
+                font-family: 'radikal', sans-serif;
+
+            }
+        }
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 40px;
+
+            button{
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                border-style: none;
+                font-weight: 700;
+                width: 280px;
+                height: 60px;
+                cursor: pointer;
+                
+            }
+            .button1{
+                color: white;
+                border: 1px solid #42DABF;
+                background-color: transparent;
+            }
+            
+            .button1:hover{
+                background-color: #42DABF;
+            }
+        }
+    }
+}
+
+
+  
+
+  @media(max-width:900px){
+    .title-temple{
+
+        h1{
+            font-size: 150px !important;
+        }
+        p{
+            font-size: 20px !important;
+
+        }
+    }
+    .buttons{
+
+        button{
+            font-size: 16px !important;
+            width: 180px !important;
+            height: 40px !important;
+
+            
+        }
+    }
+  }
+
+  @media(max-width:670px){
+    .title-temple{
+
+        h1{
+            font-size: 100px !important;
+            margin-bottom: -15px !important;
+        }
+        p{
+            font-size: 15px !important;
+
+        }
+    }
+    .buttons{
+
+        button{
+            font-size: 16px !important;
+            width: 180px !important;
+            height: 40px !important;
+
+            
+        }
+    }
+  }
+
+  @media(max-width:460px){
+    .title-temple{
+
+        h1{
+            font-size: 50px !important;
+            margin-bottom: -5px !important;
+        }
+        p{
+            font-size: 14px !important;
+            letter-spacing: 0px !important;
+            font-weight: 400 !important;
+        }
+    }
+    .buttons{
+
+        button{
+            font-size: 12px !important;
+            font-weight: 400 !important;
+            width: 100px !important;
+            height: 40px !important;
+
+        }
+    }
+  }
+
+
+
+  .particles {
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100%;
+  }
+  
+
